@@ -1,4 +1,4 @@
-I2C Soil moisture sensor
+I²C Soil moisture sensor
 ==================
 
 .. seo::
@@ -6,14 +6,8 @@ I2C Soil moisture sensor
     :image: bme280.jpg
     :keywords: i2c Soil Moisture
 
-The :doc:`/components/sensor/bme280` is a simple temperature, humidity, and pressure sensor with communication over I2C.
-With some simple math it is possible to either determine the height of the sensor, or the current pressure at sea level.
-This guide can be applied to any sensor measuring temperature and pressure at the same time, like the
-:doc:`/components/sensor/bmp280`, or :doc:`/components/sensor/bme680`.
-
-.. figure:: images/bme280-header.jpg
-    :align: center
-    :width: 75.0%
+The I²C is a simple Soil temperature, Soil Moisture, and light sensor with communication over I2C.
+To support it we need a 3rd Party library included and create a :doc:`/components/sensor/custom`.
 
 The first step is to connect the sensor as described :doc:`here </components/sensor/bme280>`.
 After validating the sensor is working, we can proceed and add some formulas.
